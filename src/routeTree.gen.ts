@@ -10,33 +10,141 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EmailStudioRouteImport } from './routes/email-studio'
+import { Route as LumaRouteImport } from './routes/luma'
+import { Route as MeetingIntelligenceRouteImport } from './routes/meeting-intelligence'
+import { Route as ResearchHubRouteImport } from './routes/research-hub'
+import { Route as SavedWorkRouteImport } from './routes/saved-work'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as TemplatesRouteImport } from './routes/templates'
+import { Route as WorkPlannerRouteImport } from './routes/work-planner'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EmailStudioRoute = EmailStudioRouteImport.update({
+  id: '/email-studio',
+  path: '/email-studio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LumaRoute = LumaRouteImport.update({
+  id: '/luma',
+  path: '/luma',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MeetingIntelligenceRoute = MeetingIntelligenceRouteImport.update({
+  id: '/meeting-intelligence',
+  path: '/meeting-intelligence',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchHubRoute = ResearchHubRouteImport.update({
+  id: '/research-hub',
+  path: '/research-hub',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SavedWorkRoute = SavedWorkRouteImport.update({
+  id: '/saved-work',
+  path: '/saved-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplatesRoute = TemplatesRouteImport.update({
+  id: '/templates',
+  path: '/templates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkPlannerRoute = WorkPlannerRouteImport.update({
+  id: '/work-planner',
+  path: '/work-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/email-studio': typeof EmailStudioRoute
+  '/luma': typeof LumaRoute
+  '/meeting-intelligence': typeof MeetingIntelligenceRoute
+  '/research-hub': typeof ResearchHubRoute
+  '/saved-work': typeof SavedWorkRoute
+  '/settings': typeof SettingsRoute
+  '/templates': typeof TemplatesRoute
+  '/work-planner': typeof WorkPlannerRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/email-studio': typeof EmailStudioRoute
+  '/luma': typeof LumaRoute
+  '/meeting-intelligence': typeof MeetingIntelligenceRoute
+  '/research-hub': typeof ResearchHubRoute
+  '/saved-work': typeof SavedWorkRoute
+  '/settings': typeof SettingsRoute
+  '/templates': typeof TemplatesRoute
+  '/work-planner': typeof WorkPlannerRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/email-studio': typeof EmailStudioRoute
+  '/luma': typeof LumaRoute
+  '/meeting-intelligence': typeof MeetingIntelligenceRoute
+  '/research-hub': typeof ResearchHubRoute
+  '/saved-work': typeof SavedWorkRoute
+  '/settings': typeof SettingsRoute
+  '/templates': typeof TemplatesRoute
+  '/work-planner': typeof WorkPlannerRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/email-studio'
+    | '/luma'
+    | '/meeting-intelligence'
+    | '/research-hub'
+    | '/saved-work'
+    | '/settings'
+    | '/templates'
+    | '/work-planner'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/email-studio'
+    | '/luma'
+    | '/meeting-intelligence'
+    | '/research-hub'
+    | '/saved-work'
+    | '/settings'
+    | '/templates'
+    | '/work-planner'
+  id:
+    | '__root__'
+    | '/'
+    | '/email-studio'
+    | '/luma'
+    | '/meeting-intelligence'
+    | '/research-hub'
+    | '/saved-work'
+    | '/settings'
+    | '/templates'
+    | '/work-planner'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  EmailStudioRoute: typeof EmailStudioRoute
+  LumaRoute: typeof LumaRoute
+  MeetingIntelligenceRoute: typeof MeetingIntelligenceRoute
+  ResearchHubRoute: typeof ResearchHubRoute
+  SavedWorkRoute: typeof SavedWorkRoute
+  SettingsRoute: typeof SettingsRoute
+  TemplatesRoute: typeof TemplatesRoute
+  WorkPlannerRoute: typeof WorkPlannerRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +156,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/email-studio': {
+      id: '/email-studio'
+      path: '/email-studio'
+      fullPath: '/email-studio'
+      preLoaderRoute: typeof EmailStudioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/luma': {
+      id: '/luma'
+      path: '/luma'
+      fullPath: '/luma'
+      preLoaderRoute: typeof LumaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meeting-intelligence': {
+      id: '/meeting-intelligence'
+      path: '/meeting-intelligence'
+      fullPath: '/meeting-intelligence'
+      preLoaderRoute: typeof MeetingIntelligenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research-hub': {
+      id: '/research-hub'
+      path: '/research-hub'
+      fullPath: '/research-hub'
+      preLoaderRoute: typeof ResearchHubRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/saved-work': {
+      id: '/saved-work'
+      path: '/saved-work'
+      fullPath: '/saved-work'
+      preLoaderRoute: typeof SavedWorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templates': {
+      id: '/templates'
+      path: '/templates'
+      fullPath: '/templates'
+      preLoaderRoute: typeof TemplatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work-planner': {
+      id: '/work-planner'
+      path: '/work-planner'
+      fullPath: '/work-planner'
+      preLoaderRoute: typeof WorkPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  EmailStudioRoute: EmailStudioRoute,
+  LumaRoute: LumaRoute,
+  MeetingIntelligenceRoute: MeetingIntelligenceRoute,
+  ResearchHubRoute: ResearchHubRoute,
+  SavedWorkRoute: SavedWorkRoute,
+  SettingsRoute: SettingsRoute,
+  TemplatesRoute: TemplatesRoute,
+  WorkPlannerRoute: WorkPlannerRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
