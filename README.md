@@ -1,233 +1,79 @@
-# Luma Workplace AI
-
-Sure ❤️ Here’s a different prompt with the same level of detail, but with a more distinctive concept and wording. I’d call the platform LumaDesk AI.
-
-Build a modern, responsive web application called “LumaDesk AI”, an intelligent workplace productivity platform designed to help professional women organize, automate, and streamline their daily work using AI.
-
-The platform should feel like a premium SaaS product: elegant, professional, intuitive, calm, and empowering. Use a sophisticated feminine aesthetic without making the interface overly pink or stereotypically feminine. The design should combine soft neutral tones with subtle lavender, mauve, blush, or warm beige accents.
-
-Core AI Features
-
-The application should include:
-
-AI Email Studio
-Generate professional emails based on the user's purpose, recipient, tone, and key points. Allow users to select tones such as professional, friendly, confident, concise, or diplomatic.
-
-Meeting Intelligence
-Allow users to paste meeting transcripts or notes and automatically generate summaries, important decisions, action items, deadlines, and assigned responsibilities.
-
-Smart Work Planner
-Allow users to enter a project, goal, or deadline and have AI break it into manageable tasks, prioritize them, estimate effort, and organize them into a practical workflow.
-
-AI Knowledge & Research Hub
-Help users structure research topics, generate research questions, organize findings, compare information, identify knowledge gaps, and create concise research briefs.
-
-Luma AI Assistant
-Include a conversational AI interface where users can brainstorm ideas, improve writing, summarize information, plan projects, solve workplace problems, and ask productivity-related questions.
-
-Dashboard Experience
-
-Create a modern dashboard that displays:
-
-Personalized welcome message
-
-Today's priorities
-
-Upcoming deadlines
-
-Recently used AI tools
-
-Quick-action buttons
-
-Productivity overview
-
-Recent AI conversations
-
-Tasks requiring attention
-
-Include a prominent “What would you like to accomplish?” input where users can describe a task and quickly select an appropriate AI workflow.
-
-Navigation
-
-Create a collapsible left sidebar containing:
-
-Dashboard
-
-Email Studio
-
-Meeting Intelligence
-
-Work Planner
-
-Research Hub
-
-Luma AI
-
-Saved Work
-
-Templates
-
-Settings
-
-On mobile devices, convert the sidebar into a responsive hamburger menu or bottom navigation.
-
-AI Interaction Design
-
-Every AI tool should use a structured prompt interface rather than a completely blank input box.
-
-For example, the Email Studio should allow users to specify:
-
-Recipient
-
-Purpose
-
-Important information
-
-Desired tone
-
-Length
-
-Call to action
-
-The generated result should appear in an editable workspace where users can:
-
-Edit the AI response
-
-Regenerate
-
-Make it shorter
-
-Make it more professional
-
-Make it friendlier
-
-Copy the result
-
-Save the result
-
-Visual Design
-
-Use a clean, premium SaaS aesthetic inspired by modern productivity applications.
-
-Design characteristics:
-
-Spacious layouts
-
-Rounded cards
-
-Subtle shadows
-
-Elegant typography
-
-Minimal icons
-
-Soft gradients
-
-Clear visual hierarchy
-
-Accessible contrast
-
-Responsive components
-
-Professional feminine styling
-
-Use colors such as:
-
-Warm white
-
-Soft beige
-
-Charcoal
-
-Muted lavender
-
-Dusty rose
-
-Mauve
-
-Subtle gold accents
-
-Avoid excessive pink, childish illustrations, or overly decorative elements.
-
-Responsive Design
-
-The application must work seamlessly across:
-
-Desktop
-
-Laptop
-
-Tablet
-
-Mobile
-
-Cards, navigation, forms, tables, and AI outputs should automatically adapt to smaller screens.
-
-Productivity Features
-
-Include additional interface elements such as:
-
-Favorite AI tools
-
-Recently generated content
-
-Saved prompts
-
-Reusable workplace templates
-
-Task completion indicators
-
-Priority labels
-
-Search functionality
-
-Notifications
-
-Light/dark mode toggle
-
-Responsible AI
-
-Include a clearly visible Responsible AI notice explaining that AI-generated information should be reviewed by the user before being used professionally.
-
-The disclaimer should emphasize:
-
-AI can make mistakes
-
-Users should verify important information
-
-Confidential or sensitive workplace information should only be entered according to company policy
-
-AI should support professional judgment rather than replace it
-
-Overall Goal
-
-The final product should feel like a premium AI productivity workspace designed for ambitious professional women — something that could realistically be used by employees, managers, entrepreneurs, consultants, administrators, researchers, and executives.
-
-The interface should communicate:
-
-Organized. Intelligent. Professional. Calm. Empowering.
-
-Make the application visually polished and realistic enough to resemble a production-ready SaaS platform rather than a basic AI demo.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://lumina-work-flow.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/78968bfb-bc35-4920-ba76-c8f131380ad6).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+# LumaDesk AI
+
+An intelligent workplace productivity platform designed to help professional women organize, automate, and streamline their daily work using AI.
+
+LumaDesk AI combines a premium, distraction-free workspace with a suite of AI-powered tools that assist with drafting, planning, research, and meeting follow-up — all in one place.
+
+## Features
+
+- **Dashboard** — Daily priorities, upcoming deadlines, quick-action intent input, and productivity stats.
+- **Luma AI Assistant** — Full conversational AI for open-ended workplace questions and tasks.
+- **AI Email Studio** — Draft professional emails with adjustable tone, length, and intent.
+- **Meeting Intelligence** — Transform meeting notes or transcripts into structured summaries and action items.
+- **Work Planner** — Generate project roadmaps, prioritize tasks, and break work into phases.
+- **Research Hub** — Structure knowledge, sources, and talking points into polished research briefs.
+- **Saved Work** — Searchable repository of generated outputs and reusable ideas.
+- **Templates** — Library of reusable workplace prompt templates.
+- **Settings** — Preferences, AI defaults, and notification toggles.
+
+## Built With
+
+- [TanStack Start](https://tanstack.com/start/) — Full-stack React framework with SSR/SSG and server functions
+- [React 19](https://react.dev/) — UI library
+- [TypeScript](https://www.typescriptlang.org/) — Type-safe development
+- [Tailwind CSS v4](https://tailwindcss.com/) — Utility-first styling with native CSS `@theme` variables
+- [Lovable AI Gateway](https://docs.lovable.dev/features/ai) — AI completions via `google/gemini-3.7-flash`
+- [Lovable Cloud](https://docs.lovable.dev/features/cloud) — Integrated backend, auth, and storage
+- [shadcn/ui](https://ui.shadcn.com/) — Accessible, composable UI components
+
+## Design System
+
+LumaDesk AI uses a warm, elevated palette tailored to a professional audience:
+
+- **Warm neutrals** — soft cream, latte, and deep espresso tones
+- **Muted lavender & mauve** — primary accents
+- **Dusty rose & soft gold** — highlights and status colors
+- **Typography** — `Fraunces` for display headings, `DM Sans` for body text
+- **Dark mode** — fully supported via CSS variables and a persistent theme toggle
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+```bash
+# Install dependencies
+bun install
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+# Start the development server
+bun run dev
 ```
+
+The dev server runs on `http://localhost:8080` by default.
+
+## Project Structure
+
+```
+src/
+  components/          # Shared UI components (AppShell, ToolWorkspace, etc.)
+  hooks/               # Custom React hooks
+  lib/                 # Utilities, state management, and server functions
+  routes/              # TanStack Start file-based routes
+  styles.css           # Global design tokens and Tailwind v4 imports
+  router.tsx           # Router configuration
+  start.ts             # App start configuration
+public/                # Static assets
+```
+
+## AI Integration
+
+AI features are powered by a server function wrapper around the Lovable AI Gateway:
+
+- `src/lib/ai.server.ts` — Gateway client and error handling
+- `src/lib/ai.functions.ts` — TanStack Start server functions used by the UI
+- Model: `google/gemini-3.7-flash`
+
+## Environment
+
+LumaDesk AI runs on Lovable Cloud. Required environment variables are managed automatically by the platform, including the Lovable API key used for AI gateway requests.
+
+## License
+
+This project is built and maintained by the project owner. All rights reserved.
