@@ -44,7 +44,7 @@ const config: ToolConfig = {
     { name: "output", label: "Output shape", type: "select", options: ["Research brief", "Question map", "Comparison table", "Executive one-pager"], span: "half" },
   ],
   buildPrompt: (v) =>
-    `Structure this research.\nTopic: ${v.topic}\nDecision it supports: ${v.objective}\nExisting findings: ${v.findings || "none provided"}\nDepth: ${v.depth}\nPreferred output: ${v.output}`,
+    `Structure this research.\nTopic: ${v["topic"]}\nDecision it supports: ${v["objective"]}\nExisting findings: ${v["findings"] || "none provided"}\nDepth: ${v["depth"]}\nPreferred output: ${v["output"]}`,
   refinements: [
     { label: "Sharper questions", instruction: "Rewrite with more precise, higher-leverage research questions." },
     { label: "Comparison table", instruction: "Reformat the core content as a clear comparison table." },

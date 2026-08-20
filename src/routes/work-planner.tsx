@@ -45,7 +45,7 @@ const config: ToolConfig = {
     { name: "style", label: "Plan style", type: "select", options: ["Phased roadmap", "Weekly sprint plan", "Simple task checklist", "Kanban-ready backlog"], span: "half" },
   ],
   buildPrompt: (v) =>
-    `Create a work plan.\nGoal: ${v.goal}\nContext and constraints: ${v.context}\nDeadline: ${v.deadline || "not specified"}\nWeekly capacity: ${v.capacity}\nPeople involved: ${v.team || "just me"}\nPreferred format: ${v.style}`,
+    `Create a work plan.\nGoal: ${v["goal"]}\nContext and constraints: ${v["context"]}\nDeadline: ${v["deadline"] || "not specified"}\nWeekly capacity: ${v["capacity"]}\nPeople involved: ${v["team"] || "just me"}\nPreferred format: ${v["style"]}`,
   refinements: [
     { label: "Simplify", instruction: "Reduce this to the essential critical path — fewer, bigger steps." },
     { label: "Add detail", instruction: "Add sub-tasks, owners and acceptance criteria to each task." },

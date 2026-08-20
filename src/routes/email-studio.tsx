@@ -51,7 +51,7 @@ const config: ToolConfig = {
     { name: "cta", label: "Call to action", type: "text", placeholder: "e.g. confirm approval by Friday", span: "full" },
   ],
   buildPrompt: (v) =>
-    `Write a workplace email.\nRecipient: ${v.recipient}\nPurpose: ${v.purpose}\nKey information: ${v.info}\nTone: ${v.tone}\nLength: ${v.length}\nDesired call to action: ${v.cta || "not specified"}`,
+    `Write a workplace email.\nRecipient: ${v["recipient"]}\nPurpose: ${v["purpose"]}\nKey information: ${v["info"]}\nTone: ${v["tone"]}\nLength: ${v["length"]}\nDesired call to action: ${v["cta"] || "not specified"}`,
 };
 
 function EmailStudio() {

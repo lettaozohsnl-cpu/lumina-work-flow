@@ -51,7 +51,7 @@ const config: ToolConfig = {
     { name: "audience", label: "Share with", type: "select", options: ["My own records", "My team", "Leadership", "Client"], span: "half" },
   ],
   buildPrompt: (v) =>
-    `Analyse this meeting.\nMeeting: ${v.title || "untitled"}\nDate: ${v.date || "not given"}\nAttendees: ${v.attendees || "not given"}\nOutput focus: ${v.focus}\nIntended audience: ${v.audience}\n\nNotes/transcript:\n${v.transcript}`,
+    `Analyse this meeting.\nMeeting: ${v["title"] || "untitled"}\nDate: ${v["date"] || "not given"}\nAttendees: ${v["attendees"] || "not given"}\nOutput focus: ${v["focus"]}\nIntended audience: ${v["audience"]}\n\nNotes/transcript:\n${v["transcript"]}`,
   refinements: [
     { label: "Shorter", instruction: "Condense this into a tighter brief without losing decisions or action items." },
     { label: "Actions only", instruction: "Return only the action items with owners and deadlines, as a clean checklist." },
